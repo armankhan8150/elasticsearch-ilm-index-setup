@@ -10,8 +10,8 @@ REPLICA_COUNT = 0
 
 # Connect to Elasticsearch
 es = Elasticsearch(
-    "https://elastic:QTIlKtQmqhZEmPSJ7Lesw5rQ@staging-athar-elk.es.eastus.azure.elastic-cloud.com/",
-    basic_auth=("elastic", "QTIlKtQmqhZEmPSJ7Lesw5rQ"),
+    "https://your-elastic-host",
+    basic_auth=("elastic", "your-password"),
     request_timeout=60,
     max_retries=10,
     retry_on_timeout=True
