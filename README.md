@@ -38,6 +38,7 @@ pip install -r requirements.txt
 
 ## 📘 Usage
 1. **Edit the Configuration**
+
 In the script, update these variables:
 ```python
 INDEX_NAME = "prod_news_es-000001"
