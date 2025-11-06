@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ---
 
 ## 📘 Usage
-1. Edit the Configuration
+1. **Edit the Configuration**
 In the script, update these variables:
 ```python
 INDEX_NAME = "prod_news_es-000001"
@@ -52,11 +52,11 @@ es = Elasticsearch(
     basic_auth=("elastic", "your-password")
 )
 ```
-2. Run the Script
+2. **Run the Script**
 ```bash
 python ilm_index_setup.py
 ```
-3. Expected Output
+3. **Expected Output**
 ```pgsql
 ILM policy created successfully.
 Index template created successfully.
