@@ -32,3 +32,37 @@ It’s perfect for teams managing production clusters that need **automatic roll
 Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+---
+
+## 📘 Usage
+1. Edit the Configuration
+    In the script, update these variables:
+```python
+INDEX_NAME = "prod_news_es-000001"
+ALIAS_NAME = "prod_news_es"
+POLICY_NAME = "prod_news_policy"
+TEMPLATE_NAME = "prod_news_es_template"
+```
+And your Elasticsearch connection details:
+```python
+es = Elasticsearch(
+    "https://your-elastic-host",
+    basic_auth=("elastic", "your-password")
+)
+```
+2. Run the Script
+```bash
+python ilm_index_setup.py
+```
+3. Expected Output
+```pgsql
+ILM policy created successfully.
+Index template created successfully.
+Index 'prod_news_es-000001' created successfully with alias 'prod_news_es'.
+```
+
+
+
+
